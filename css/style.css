@@ -44,16 +44,71 @@ table {
 /* Main section */
 body
 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
     margin: 0px 0px;
-    background: #ebf3f5;
-    font: 12px Arial;
+    background: #ffffff;
+	position: relative;
+	color: #333333;
+	padding: 0;
+}
+*, input, :before, :after {
+    box-sizing: border-box;
 }
 a { 
     text-decoration:none; 
-    font-family:Tahoma; 
-    color:#008000;
+    font-family: 'Open Sans', sans-serif;
 }
 .clear {
     clear: both;
     height: 1px;
 }
+/* header */
+#header-top {
+    height: 35px;
+    line-height: 35px !important;
+    background: #f58f0a;
+}
+.top-search-wrapper{
+	font-size: 13px;
+	height: 35px;
+}
+.top-search{
+	display: inline-block;
+}
+.top-links{
+	display: inline-block;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 11px;
+}
+.top-links a{
+	color: #ffffff;
+}
+.top-links-wrapper{
+	display: table !important;
+}
+.links-wrapper{
+	display: table-cell;
+    vertical-align: middle;
+}
+.links-wrapper a{
+	margin: 0 10px;
+}
+.top-form-wrapper{
+	display: table !important;
+}
+.top-search-bar{
+	display: table-cell;
+    vertical-align: middle;
+}
+.search-input-field{
+    line-height: 35px;
+    width: 200px;
+    margin-right: 10px;
+    height: 27px;
+    border: none;
+    border-radius: 3px;
+    padding: 0px 5px 0px 15px;
+}
+/* end header */
