@@ -112,3 +112,102 @@ a {
     padding: 0px 5px 0px 15px;
 }
 /* end header */
+/* navigation */
+nav{
+    width: 100%; 
+    background: white; 
+    position: relative;
+    font-size: 12px;
+    z-index: 9;
+}
+li a{
+    text-decoration: none;
+}
+.dropdown{
+    position: absolute; 
+    width: 175px;
+    top: 43px; 
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-out .35s;
+}
+.mainnav li{
+    float: left;
+    padding: 0 5px;
+    background: white;
+    border-left: 1px solid #fff;
+    height: 32px;
+    line-height: 32px;
+}
+.mainnav li:first-child{
+    border: none;
+}
+.mainnav li.hassubs > a{ 
+    display: inline-block;
+    color: #f58f09;
+}
+.mainnav li.subs > a{ 
+    display: block;
+    padding: 0px 20px;
+    color: #f58f09;
+}
+.mainnav li:hover{
+    background: #fff;
+    /*transition: ease-in .35s;*/
+}
+.mainnav li:hover a{
+    color: #f58f09;
+    /*transition: ease-in .35s;*/
+}
+/* Menu level 1 */
+.subs {
+    left: -6px;
+    position: relative;
+    top: 0px;
+    width: 175px;
+    border-left: none !important; 
+    border-bottom: 1px dotted #fff !important;
+    overflow: hidden;
+}
+.subs:last-child{
+    border: none !important;
+}
+.hassubs:hover .dropdown{
+    opacity: 1;
+    visibility: visible; 
+    transition: ease-in .35s;
+}
+.mainnav li:hover ul a{
+    color: white;
+    background: #f58f09;
+}
+.mainnav li ul li:hover{
+    background: white;
+    /*transition: ease-in-out .35s;*/
+}
+.mainnav li ul li:hover a{
+    color: white;
+    /*transition: ease-in-out .35s;*/
+}
+li.hassubs{
+	height: 43px;
+	position: relative;
+}
+li.hassubs > a{
+    position: relative;
+}
+li.hassubs > a:after {
+    background: #f58f0a !important;
+    content: '';
+    height: 3px;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+}
+.header-middle .container{
+	height: 130px;
+	line-height: 130px !important;
+}
+/*end navigation*/
