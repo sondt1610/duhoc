@@ -17,7 +17,6 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
 }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -126,18 +125,26 @@ li a{
 .dropdown{
     position: absolute; 
     width: 175px;
-    top: 43px; 
+    top: 100px;
+    right: 0px;
     opacity: 0;
     visibility: hidden;
     transition: ease-out .35s;
+    z-index: 500;
 }
 .mainnav li{
     float: left;
-    padding: 0 5px;
     background: white;
     border-left: 1px solid #fff;
-    height: 32px;
+}
+.mainnav li.hassubs{
+    padding: 0 10px;
+    height: 130px;
+    line-height: 130px;
+}
+.mainnav li.subs{
     line-height: 32px;
+    padding: 0;
 }
 .mainnav li:first-child{
     border: none;
@@ -153,7 +160,7 @@ li a{
 }
 .mainnav li:hover{
     background: #fff;
-    /*transition: ease-in .35s;*/
+    transition: ease-in .35s;
 }
 .mainnav li:hover a{
     color: #f58f09;
@@ -161,13 +168,12 @@ li a{
 }
 /* Menu level 1 */
 .subs {
-    left: -6px;
+    right: 0px;
     position: relative;
     top: 0px;
     width: 175px;
     border-left: none !important; 
     border-bottom: 1px dotted #fff !important;
-    overflow: hidden;
 }
 .subs:last-child{
     border: none !important;
@@ -195,19 +201,27 @@ li.hassubs{
 }
 li.hassubs > a{
     position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
 }
-li.hassubs > a:after {
-    background: #f58f0a !important;
+.mainnav li.hassubs > a:hover:after{
+    background: red;
+}
+li.hassubs > a:after{
+    background: transparent;
+    /* background: #f58f0a !important; */
     content: '';
     height: 3px;
     background: transparent;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -8px;
+    bottom: 47px;
 }
-.header-middle .container{
+.header-middle{
+    margin-top: 15px;
 	height: 130px;
-	line-height: 130px !important;
+	line-height: 130px;
 }
 /*end navigation*/
