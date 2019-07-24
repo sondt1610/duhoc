@@ -123,14 +123,30 @@ li a{
     text-decoration: none;
 }
 .dropdown{
+	padding: 10px;
+	border-radius: 7px;
     position: absolute; 
-    width: 175px;
+    min-width: 250px;
+    background: #f58f09;
     top: 100px;
     right: 0px;
     opacity: 0;
     visibility: hidden;
-    transition: ease-out .35s;
     z-index: 500;
+}
+.dropdown:after{
+    content: '';
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid #f58f0a;
+    border-right: 8px solid transparent;
+    position: absolute;
+    top: -16px;
+    left: 0;
+    right: -75%;
+    margin: auto;
+    width: 10px;
+    display: block !important;
 }
 .mainnav li{
     float: left;
@@ -145,6 +161,7 @@ li a{
 .mainnav li.subs{
     line-height: 32px;
     padding: 0;
+    background: #f58f09;
 }
 .mainnav li:first-child{
     border: none;
@@ -154,8 +171,8 @@ li a{
     color: #f58f09;
 }
 .mainnav li.subs > a{ 
-    display: block;
-    padding: 0px 20px;
+    display: inline-block;
+    position: relative;
     color: #f58f09;
 }
 .mainnav li:hover{
@@ -164,16 +181,15 @@ li a{
 }
 .mainnav li:hover a{
     color: #f58f09;
-    /*transition: ease-in .35s;*/
+    text-decoration:none; 
 }
 /* Menu level 1 */
 .subs {
     right: 0px;
     position: relative;
     top: 0px;
-    width: 175px;
+    min-width: 250px;
     border-left: none !important; 
-    border-bottom: 1px dotted #fff !important;
 }
 .subs:last-child{
     border: none !important;
@@ -188,12 +204,10 @@ li a{
     background: #f58f09;
 }
 .mainnav li ul li:hover{
-    background: white;
-    /*transition: ease-in-out .35s;*/
+    background: #f58f09;
 }
 .mainnav li ul li:hover a{
     color: white;
-    /*transition: ease-in-out .35s;*/
 }
 li.hassubs{
 	height: 43px;
@@ -206,11 +220,13 @@ li.hassubs > a{
     font-size: 12px;
 }
 .mainnav li.hassubs > a:hover:after{
-    background: red;
+    background: #f58f09;
+}
+.mainnav li.active > a:after{
+	background: #f58f09;
 }
 li.hassubs > a:after{
     background: transparent;
-    /* background: #f58f0a !important; */
     content: '';
     height: 3px;
     background: transparent;
@@ -220,8 +236,26 @@ li.hassubs > a:after{
     bottom: 47px;
 }
 .header-middle{
-    margin-top: 15px;
 	height: 130px;
 	line-height: 130px;
 }
+ul.dropdown > li > a:after {
+    content: '';
+    width: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 1px;
+    background: #ffffff;
+    transition: ease-in-out 0.8s;
+}
+ul.dropdown > li > a:hover:after {
+    width: 100%;
+}
 /*end navigation*/
+/*home main slider*/
+.home-main-slider{
+	padding: 50px 0;
+}
+/*end home main slider*/
