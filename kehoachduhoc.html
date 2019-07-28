@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Du học</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="shortcut icon" href="images/favicon.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <!-- mobile-nav -->
+        <div id="NavDrawer" class="transition">
+            <div class="drawer__header">
+                <div class="drawer__close js-drawer-close">
+                    <button type="button" class="icon-fallback-text">
+                        <span>Đóng</span><i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <ul class="mobile-menu">
+                <li class="mobile-nav__item mobile-nav__search">
+                    <form action="/search" method="get" class="input-group search-bar" role="search">
+                        <input type="hidden" name="type" value="product">
+                        <input type="search" name="q" value="" placeholder="Tìm kiếm..." class="input-group-field" aria-label="Tìm kiếm...">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn icon-fallback-text">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                    </form>
+                </li>
+                <li>
+                  <div class="dropdownlink">Cẩm nang
+                    <i class="fa fa-plus icon-plus" aria-hidden="true"></i>
+                    <i class="fa fa-minus icon-minus" aria-hidden="true"></i>
+                  </div>
+                  <ul class="submenuItems">
+                    <li><a href="#">Cẩm nang</a></li>
+                    <li><a href="#">Cẩm nang 2</a></li>
+                    <li><a href="#">Cẩm nang 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="dropdownlink">Thư viện
+                    <i class="fa fa-plus icon-plus" aria-hidden="true"></i>
+                    <i class="fa fa-minus icon-minus" aria-hidden="true"></i>
+                  </div>
+                  <ul class="submenuItems">
+                    <li><a href="#">Thư viện 1</a></li>
+                    <li><a href="#">Thư viện 2</a></li>
+                    <li><a href="#">Thư viện 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="dropdownlink">Du học
+                    <i class="fa fa-plus icon-plus" aria-hidden="true"></i>
+                    <i class="fa fa-minus icon-minus" aria-hidden="true"></i>
+                  </div>
+                  <ul class="submenuItems">
+                    <li><a href="#">Du học 1</a></li>
+                    <li><a href="#">Du học 2</a></li>
+                    <li><a href="#">Du học 3</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="cart-overlay"></div>
+        <!-- end mobile-nav -->
+        <!-- header -->
+        <div id="header">
+            <div id="header-top">
+                <div class="container">
+                    <div class="hdt-social-network float-left">
+                        <a href="https://www.facebook.com/duhocsunny/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/channel/UCfJg86e2aefpNf2mNiz8dVw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/duhochanquoc.sunny" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="top-search-wrapper float-right text-right">
+                        <div class="top-search">
+                            <div class="top-form-wrapper">
+                                <form action="#" method="get" class="top-search-bar">
+                                    <input class="search-input-field" type="search" name="q" value="" placeholder="Tìm kiếm...">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="top-links">
+                            <div class="top-links-wrapper">
+                                <div class="links-wrapper">
+                                    <a href="#">Tài khoản</a>
+                                    <span>|</span>
+                                    <a href="#">Các khóa học đã đăng ký: <span>0</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- start navigation -->
+                        <div class="col-4 col-md-2 offset-md-1">
+                            <img src="./images/logobdfd.png" alt="logo" class="img-fluid">
+                        </div>
+                        <div class="col-8 col-md-8 offset-md-1"">
+                            <div class="menu-bar text-right">
+                                <i class="fa fa-bars click-menu" aria-hidden="true"></i>
+                            </div>
+                            <ul class="mainnav">
+                                <li class="active hassubs"><a href="#">Trang chủ</a></li>
+                                <li class="hassubs"><a href="#">Về Sunny</a>
+                                    <ul class="dropdown">
+                                        <li class="subs"><a href="#">Thư ngỏ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hassubs"><a href="#">Trường ĐH Hàn Quốc</a>
+                                    <ul class="dropdown">
+                                        <li class="subs"><a href="#">Thông tin</a></li>
+                                        <li class="subs"><a href="#">Thời gian</a></li>
+                                        <li class="subs"><a href="#">Địa điểm</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hassubs">
+                                    <a href="#">Cẩm nang</a>
+                                </li>
+                                <li class="hassubs">
+                                    <a href="#">Tuyển sinh</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end navigation -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+        
+        <div class="clear"></div>
+        <!-- footer -->
+        <footer id="footer">
+            <div class="ft-content">
+                <div class="ft-content-overlay"></div>
+                <div class="wrapper-articles">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-12">
+                                <div class="ft-contact">
+                                    <h3>Trung tâm du học Hàn Quốc Sunny</h3>
+                                    <div class="ft-contact-address">
+                                        Tầng 8, tòa nhà Callary, 123 Lý Chính Thắng, Phường 7, Quận 3, TP. HCM. <br>Số 32, ngách 376/12 đường Bưởi, P. Vĩnh Phúc, Q. Ba Đình, Hà Nội
+                                    </div>
+                                    <div class="ft-contact-tel">
+                                            <a href="tel:02477771990">02477771990</a>
+                                    </div>
+                                    <div class="ft-contact-email">
+                                            <a href="mailto:info@duhocsunny.edu.vn">info@duhocsunny.edu.vn</a>
+                                    </div>
+                                </div>
+                                <div class="ft-social-network medium--hide small--hide">
+                                    <a href="https://www.facebook.com/duhocsunny/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCfJg86e2aefpNf2mNiz8dVw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                    <a href="https://instagram.com/duhochanquoc.sunny" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="ft-nav">
+                                    <h3>Liên kết nhanh</h3>
+                                    <ul class="no-bullets">
+                                        <li>
+                                            <a href="/">Trang chủ</a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/sunny-nguoi-ban-dong-hanh-dang-tin-cay-nhat">Về Sunny</a>
+                                        </li>
+                                        <li>
+                                            <a href="/collections/truong-dh-han-quoc">Trường ĐH Hàn Quốc</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blogs/chuong-trinh-duhoc">Sự kiện du học</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blogs/cam-nang-du-hoc">Cẩm nang</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blogs/news">Tin tức</a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/tu-van-cung-sunny">ĐĂNG KÝ TƯ VẤN</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="ft-nav">
+                                    <h3>Trường ĐH Hàn Quốc</h3>
+                                    <ul class="no-bullets">
+                                        <li>
+                                            <a href="/collections/truong-top-1">Trường TOP 1%</a>
+                                        </li>
+                                        <li>
+                                            <a href="/collections/truong-khac">Trường khác</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="ft-subscribe">
+                                    <h3>Đăng ký nhận tin</h3>
+                                    <div class="ft-sub-desc">
+                                        Hãy nhập địa chỉ email của bạn vào ô dưới đây để có thể nhận được tất cả các tin tức mới nhất của Sunny về các kì thi, hoạt động và sự kiện du học Hàn Quốc các bạn nhé!
+                                    </div>
+                                    <div class="ft-sub-wrapper">
+                                        <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                                            <input name="form_type" type="hidden" value="customer">
+                                            <input name="utf8" type="hidden" value="✓">
+                                            <div class="input-group">
+                                                <input type="email" value="" placeholder="Nhập email của bạn..." name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
+                                                <input type="hidden" name="contact[tags]" value="newsletter">
+                                                <span class="input-group-btn">												
+                                                    <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                                </span>										
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-copyrights-wrapper">
+                <div class="wrapper-articles">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="ft-copyrights text-center">
+                                    Copyrights © 2017 by <a target="_blank" href="https://duhocsunny.edu.vn/">Trung tâm du học Hàn Quốc Sunny</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <div id="back-to-top" class="text-center">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

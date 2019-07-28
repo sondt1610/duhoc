@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Du học</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="shortcut icon" href="images/favicon.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/prefixfree.min.js"></script>
+    </head>
+    <body>
+        <!-- mobile-nav -->
+        <div id="NavDrawer" class="transition">
+            <div class="drawer__header">
+                <div class="drawer__close js-drawer-close">
+                    <button type="button" class="icon-fallback-text">
+                        <span>Đóng</span><i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <ul class="mobile-menu">
+                <li class="mobile-nav__item mobile-nav__search">
+                    <form action="/search" method="get" class="input-group search-bar" role="search">
+                        <input type="hidden" name="type" value="product">
+                        <input type="search" name="q" value="" placeholder="Tìm kiếm..." class="input-group-field" aria-label="Tìm kiếm...">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn icon-fallback-text">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                    </form>
+                </li>
+                <li>
+                  <div class="dropdownlink">Cẩm nang
+                    <i class="fa fa-plus icon-plus" aria-hidden="true"></i>
+                    <i class="fa fa-minus icon-minus" aria-hidden="true"></i>
+                  </div>
+                  <ul class="submenuItems">
+                    <li><a href="#">Cẩm nang</a></li>
+                    <li><a href="#">Cẩm nang 2</a></li>
+                    <li><a href="#">Cẩm nang 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="dropdownlink">Thư viện
+                    <i class="fa fa-plus icon-plus" aria-hidden="true"></i>
+                    <i class="fa fa-minus icon-minus" aria-hidden="true"></i>
+                  </div>
+                  <ul class="submenuItems">
+                    <li><a href="#">Thư viện 1</a></li>
+                    <li><a href="#">Thư viện 2</a></li>
+                    <li><a href="#">Thư viện 3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="dropdownlink">Du học
+                    <i class="fa fa-plus icon-plus" aria-hidden="true"></i>
+                    <i class="fa fa-minus icon-minus" aria-hidden="true"></i>
+                  </div>
+                  <ul class="submenuItems">
+                    <li><a href="#">Du học 1</a></li>
+                    <li><a href="#">Du học 2</a></li>
+                    <li><a href="#">Du học 3</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="cart-overlay"></div>
+        <!-- end mobile-nav -->
+        <!-- header -->
+        <div id="header">
+            <div id="header-top">
+                <div class="container">
+                    <div class="hdt-social-network float-left">
+                        <a href="https://www.facebook.com/duhocsunny/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/channel/UCfJg86e2aefpNf2mNiz8dVw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com/duhochanquoc.sunny" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="top-search-wrapper float-right text-right">
+                        <div class="top-search">
+                            <div class="top-form-wrapper">
+                                <form action="#" method="get" class="top-search-bar">
+                                    <input class="search-input-field" type="search" name="q" value="" placeholder="Tìm kiếm...">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="top-links">
+                            <div class="top-links-wrapper">
+                                <div class="links-wrapper">
+                                    <a href="#">Tài khoản</a>
+                                    <span>|</span>
+                                    <a href="#">Các khóa học đã đăng ký: <span>0</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- start navigation -->
+                        <div class="col-4 col-md-2 offset-md-1">
+                            <img src="./images/logobdfd.png" alt="logo" class="img-fluid">
+                        </div>
+                        <div class="col-8 col-md-8 offset-md-1"">
+                            <div class="menu-bar text-right">
+                                <i class="fa fa-bars click-menu" aria-hidden="true"></i>
+                            </div>
+                            <ul class="mainnav">
+                                <li class="active hassubs"><a href="#">Trang chủ</a></li>
+                                <li class="hassubs"><a href="#">Về Sunny</a>
+                                    <ul class="dropdown">
+                                        <li class="subs"><a href="#">Thư ngỏ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hassubs"><a href="#">Trường ĐH Hàn Quốc</a>
+                                    <ul class="dropdown">
+                                        <li class="subs"><a href="#">Thông tin</a></li>
+                                        <li class="subs"><a href="#">Thời gian</a></li>
+                                        <li class="subs"><a href="#">Địa điểm</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hassubs">
+                                    <a href="#">Cẩm nang</a>
+                                </li>
+                                <li class="hassubs">
+                                    <a href="#">Tuyển sinh</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end navigation -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- breadcrumb -->
+        <section id="breadcrumb-wrapper" class="breadcrumb-w-img ">
+            <div class="breadcrumb-overlay"></div>
+            <div class="breadcrumb-content">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-sm-12">
+                            <div class="breadcrumb-big">
+                                <h2>
+                                    Tài khoản
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="breadcrumb-small">
+                                <a href="/" title="Quay trở về trang chủ">Trang chủ</a>
+                                <span aria-hidden="true">/</span>
+                                <span>Tài khoản</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end breadcrumb -->
+        <!-- page-wrapper -->
+        <section id="page-wrapper">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-4 offset-4">
+                        <h1>Đăng nhập</h1>
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-login">Đăng nhập</button>
+                            <p><a href="/">Trở về</a></p>
+                            <p><a href="/account/register" id="customer_register_link">Đăng kí</a></p>
+                            <p><a href="#recover" id="RecoverPassword">Quên mật khẩu?</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end page-wrapper -->
+        <!-- home-contact -->
+        <section id="home-contact">
+                <div class="wrapper">
+                    <div class="inner">
+                        <h2 class="section-title">
+                            Tư vấn
+                        </h2>
+                        <div class="section-title-underline"></div>
+                        <div class="grid">
+                            <div class="grid__item large--one-quarter medium--one-half small--one-whole">
+                                
+                                
+                                
+                                
+                                
+                                <div class="hco-item">
+                                    <div class="hco-title">
+                                        hỗ trợ trực tuyến
+                                    </div>
+                                    <div class="hco-desc">
+                                        Bạn muốn tìm hiểu thêm thông tin về du học Hàn Quốc, học bổng, về các hoạt động và đời sống tại Hàn Quốc?
+                                    </div>
+                                    <div class="hco-viewmore">
+                                        <a href="/pages/lien-he">liên hệ ngay <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                                <div class="hco-item">
+                                    <div class="hco-title">
+                                        thông tin tuyển sinh
+                                    </div>
+                                    <div class="hco-desc">
+                                        Bạn cần tìm hiểu thêm về các yêu cầu để nhập học, về học phí, về lộ trình du học?
+                                    </div>
+                                    <div class="hco-viewmore">
+                                        <a href="https://duhocsunny.edu.vn/collections/truong-dh-han-quoc">tìm hiểu ngay <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                                <div class="hco-item">
+                                    <div class="hco-title">
+                                        các hoạt động sắp diễn ra
+                                    </div>
+                                    <div class="hco-desc">
+                                        Các hoạt động và sự kiện sắp diễn ra sẽ được cập nhật tại đây. Đừng bỏ lỡ nhé!
+                                    </div>
+                                    <div class="hco-viewmore">
+                                        <a href="/">tìm hiểu ngay <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="grid__item large--one-quarter medium--one-half small--one-whole float-right">
+                                <div class="hco-title">
+                                    Câu hỏi thường gặp
+                                </div>
+                                <div class="ac-container">
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <div>
+                                        <input id="ac-1" name="accordion-1" type="radio" checked="">
+                                        <label for="ac-1">1. Đến Hàn Quốc sau bao lâu thì có thể đi làm thêm? Điều kiện để được phép đi làm thêm là gì? Công việc làm thêm ở Hàn Quốc có nhiều không? Du học sinh được phép làm những công việc gì và lương bao nhiêu 1 tháng?</label>
+                                        <article class="ac-medium">
+                                            <p>Đến hàn quốc bao lâu thì có thể đi làm thêm: 6 tháng. Nhưng nếu bạn học hệ cao đẳng, đại học và có tín chỉ topic 3 thì có thể đi làm luôn. Điều kiện để được phép đi làm thêm: (1) chỉ giành cho những bạn có điểm chuyên cần từ 90% trở lên, bảng điểm từ điểm C trở lên mới được phép đi làm thêm. (2) Và tùy vào khả năng tiếng mới được phép làm thêm ngoài giờ: Học sinh học tiếng phải có topic cấp 2, Sinh viên học trung cấp nghề, đại học năm nhất, năm 2 phải có topic 3, Đại học năm cuối, cao học phải có topic 5. Về Công việc làm thêm ở Hàn Quốc: thường thì ở các thành phố lớn thì công việc sẽ có nhiều như: Busan, seul, các đại điểm gần trạm tàu điện ngầm …Du học sinh được phép làm những công việc gì: tất cả các công việc ngoại trừ làm trong nhà xưởng và các công việc không được pháp luật cho phép, Lương trung bình khoảng 800-1000$ 1 tháng (6500 – 7500won/1h)</p>
+                                        </article>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <div>
+                                        <input id="ac-2" name="accordion-1" type="radio">
+                                        <label for="ac-2">2. Làm thế nào để cân bằng vừa đi làm vừa học tốt</label>
+                                        <article class="ac-medium">
+                                            <p>- Bạn nên quản lý thời gian của mình thật tốt. Tự mình lên kế hoạch hàng ngày hoặc hàng tuần và hãy chắc chắn rằng bạn dành thời gian nhất định cho việc học tập. Thời gian còn lại có thể phân cho gia đình, bạn bè, hoạt động xã hội. Và bạn nên nhớ rằng đối với bạn việc học vẫn là quan trong nhất</p>
+                                        </article>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <div>
+                                        <input id="ac-3" name="accordion-1" type="radio">
+                                        <label for="ac-3">3. Làm cách nào để săn học bổng ?</label>
+                                        <article class="ac-medium">
+                                            <p>Trước tiên, bạn nên tìm hiểu kỹ những thông tin về trường mà bạn muốn theo học. Ở Hàn Quốc trường cao đăng, đại học nào cũng có học bổng, đa số đều có điều kiện dựa vào chứng chỉ tiếng Hàn Topic, có tham gia nhiều hoạt động ngoại khóa và điểm GPA là 8.0/10 trở lên.</p>
+                                        </article>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <div>
+                                        <input id="ac-4" name="accordion-1" type="radio">
+                                        <label for="ac-4">4. Phương tiện đi lại tiết kiệm chi phí nhất ở Hàn Quốc chủ yếu là gì? Có thuận tiện không? Chi phí như thế nào?</label>
+                                        <article class="ac-medium">
+                                            <p>Chủ yếu đi lại bằng tàu điện ngầm và xe buýt. Với hệ thống mạng lưới khá dày đặc, kết nối tất cả các điểm đến nên cũng không mấy khó khăn. Chi phí tàu điện ngầm: Thẻ giao thông du lịch 1 lần : 1150won, Thẻ giao thông du lịch nhiều lần : 1050won. Chi phí xe buýt : 1150won còn sử dụng thẻ là 1050won.</p>
+                                        </article>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="grid__item large--two-quarters medium--one-whole small--one-whole">
+                                <div class="hco-contact-form">
+                                    <div class="hco-contact-form-title text-center">
+                                        GIẢI ĐÁP MỌI THẮC MẮC<br> CỦA PHỤ HUYNH VÀ SINH VIÊN
+                                    </div>
+                                    <div class="form-vertical clearfix">
+                                        <form accept-charset="UTF-8" action="/contact" class="contact-form" method="post">
+            <input name="form_type" type="hidden" value="contact">
+            <input name="utf8" type="hidden" value="✓">
+            
+            
+                                        
+                                        
+            
+                                        
+            
+                                        <div class="grid mg-left-15">
+                                            <div class="grid__item large--one-half medium--one-half small--one-whole pd-left15">
+                                                <div class="grid mg-left-15">
+                                                    <div class="grid__item large--one-whole pd-left15">
+                                                        
+                                                        <label for="ContactFormName">Họ tên của bạn</label>
+                                                        <input type="text" id="ContactFormName" class="input-full" name="contact[name]" placeholder="Họ tên của bạn" value="">
+                                                    </div>
+                                                    <div class="grid__item large--one-whole pd-left15">
+                                                        <label for="ContactFormEmail">Địa chỉ email của bạn</label>
+                                                        <input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="Địa chỉ email của bạn" value="">
+                                                    </div>
+                                                    <div class="grid__item large--one-whole pd-left15">
+                                                        
+                                                        <label for="ContactFormPhone">Số điện thoại của bạn</label>
+                                                        <input type="tel" id="ContactFormPhone" class="input-full" name="contact[phone]" placeholder="Số điện thoại của bạn" pattern="[0-9\-]*" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid__item large--one-half medium--one-half small--one-whole pd-left15">
+                                                <label for="ContactFormMessage">Nội dung</label>
+                                                <textarea rows="10" id="ContactFormMessage" class="input-full" name="contact[body]" placeholder="Nội dung"></textarea>
+            
+                                                <p class="hco-form-note">
+                                                    <i>* Mọi thắc mắc của bạn sẽ được phản hồi trong 24h. Xin cảm ơn!</i>
+                                                </p>
+            
+            
+                                                <input type="submit" class="btn right btnContactSubmit" value="Gửi">
+                                            </div>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- end home-contact -->
+        <div class="clear"></div>
+        <!-- footer -->
+        <footer id="footer">
+            <div class="ft-content">
+                <div class="ft-content-overlay"></div>
+                <div class="wrapper-articles">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-12">
+                                <div class="ft-contact">
+                                    <h3>Trung tâm du học Hàn Quốc Sunny</h3>
+                                    <div class="ft-contact-address">
+                                        Tầng 8, tòa nhà Callary, 123 Lý Chính Thắng, Phường 7, Quận 3, TP. HCM. <br>Số 32, ngách 376/12 đường Bưởi, P. Vĩnh Phúc, Q. Ba Đình, Hà Nội
+                                    </div>
+                                    <div class="ft-contact-tel">
+                                            <a href="tel:02477771990">02477771990</a>
+                                    </div>
+                                    <div class="ft-contact-email">
+                                            <a href="mailto:info@duhocsunny.edu.vn">info@duhocsunny.edu.vn</a>
+                                    </div>
+                                </div>
+                                <div class="ft-social-network medium--hide small--hide">
+                                    <a href="https://www.facebook.com/duhocsunny/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCfJg86e2aefpNf2mNiz8dVw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                    <a href="https://instagram.com/duhochanquoc.sunny" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="ft-nav">
+                                    <h3>Liên kết nhanh</h3>
+                                    <ul class="no-bullets">
+                                        <li>
+                                            <a href="/">Trang chủ</a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/sunny-nguoi-ban-dong-hanh-dang-tin-cay-nhat">Về Sunny</a>
+                                        </li>
+                                        <li>
+                                            <a href="/collections/truong-dh-han-quoc">Trường ĐH Hàn Quốc</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blogs/chuong-trinh-duhoc">Sự kiện du học</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blogs/cam-nang-du-hoc">Cẩm nang</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blogs/news">Tin tức</a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/tu-van-cung-sunny">ĐĂNG KÝ TƯ VẤN</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="ft-nav">
+                                    <h3>Trường ĐH Hàn Quốc</h3>
+                                    <ul class="no-bullets">
+                                        <li>
+                                            <a href="/collections/truong-top-1">Trường TOP 1%</a>
+                                        </li>
+                                        <li>
+                                            <a href="/collections/truong-khac">Trường khác</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="ft-subscribe">
+                                    <h3>Đăng ký nhận tin</h3>
+                                    <div class="ft-sub-desc">
+                                        Hãy nhập địa chỉ email của bạn vào ô dưới đây để có thể nhận được tất cả các tin tức mới nhất của Sunny về các kì thi, hoạt động và sự kiện du học Hàn Quốc các bạn nhé!
+                                    </div>
+                                    <div class="ft-sub-wrapper">
+                                        <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                                            <input name="form_type" type="hidden" value="customer">
+                                            <input name="utf8" type="hidden" value="✓">
+                                            <div class="input-group">
+                                                <input type="email" value="" placeholder="Nhập email của bạn..." name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
+                                                <input type="hidden" name="contact[tags]" value="newsletter">
+                                                <span class="input-group-btn">												
+                                                    <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                                </span>										
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-copyrights-wrapper">
+                <div class="wrapper-articles">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="ft-copyrights text-center">
+                                    Copyrights © 2017 by <a target="_blank" href="https://duhocsunny.edu.vn/">Trung tâm du học Hàn Quốc Sunny</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <div id="back-to-top" class="text-center">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
