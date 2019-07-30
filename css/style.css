@@ -960,6 +960,9 @@ ul {
     padding-left: 30px;
     line-height: 20px;
 }
+#home-contact .wrapper-articles .abc :nth-child(1) { order: 1; }
+#home-contact .wrapper-articles .abc :nth-child(2) { order: 3; }
+#home-contact .wrapper-articles .abc :nth-child(3) { order: 2; }
 #home-contact .wrapper-support .hco-item {
     margin-bottom: 30px;
 }
@@ -1047,6 +1050,8 @@ input, textarea, select {
     z-index: 20;
     display: block;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 #home-contact .ac-container input {
     display: none;
